@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajade Fortpolio</title>
+
+    <link rel="Website icon" type="png" href="image">
+    <link rel="stylesheet"  href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+      <!-- CCS -->
+<style>
+    /*background color ng web*/
+    body{
+      /* background: rgb(255, 224, 171);*/
+       position: relative;
+       margin: 0;
+       padding-bottom: 7em;
+     
+        
+    }
+
+    /*header nya sa taas*/
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 0%;
+        background-color: rgb(152, 109, 66);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+    }
+     /*name natin sa taas ng header*/
+    
+    .logo{
+        position: relative;
+        font-size: 30px;
+        color: rgb(255, 224, 171);
+        text-decoration: none;
+        font-weight: 700;
+       
+    }
+
+    /* mga nakalagay sa header natin */
+    .navbar a{
+        font-size: 30px;
+        color: rgb(255, 224, 171);
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 55px;
+        transition: 1s;
+       
+       
+    }
+    
+    
+    /*kapag clinick yung mga button sa taas*/
+    .navbar a:hover,
+    .navbar a.homee{
+        color: rgb(39, 192, 90);
+        transform: translateY(-5px) translateX(-10px);
+       
+    }
+    /*kulay ng icon para sa darkmode */
+    .moon{
+        color:  rgb(255, 224, 171);
+        font-size: 30px;
+        cursor: pointer;
+        
+       
+    }
+    .moon :hover{
+        transform: translateY(-5px) translateX(-10px);
+    }
+
+    /*kung saan nakapwesto yung about satin*/
+    .homee{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        padding: 0 10%;
+        margin-bottom: -160px;
+    }
+
+
+    /*sukat ng nasa loob nito*/
+    .homeebackground h1 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: auto;
+    color: rgb(152, 109, 66);
+    }
+
+      /*sukat ng nasa loob nito*/
+    .homeebackground h3 {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: auto;
+        color: rgb(152, 109, 66);
+    }
+      /*sukat ng nasa loob nito*/
+    .homeebackground p {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: auto;
+        color: rgb(152, 109, 66);
+    }
+
+    
+    /*image natin sa kanan*/
+    .img {
+        width: 450px;
+        height: auto;
+        margin-left: 300px;
+        display: block;
+        transition: 1s;
+    } 
+    .img:hover{
+        transform: translateY(30px) translateX(20px); 
+    }
+    
+    
+
+    .homeebackground a{
+        background: rgb(152, 109, 66) ;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 224, 171);
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 10px;
+        
+    }
+
+    .homeebackground :hover {
+        color: rgb(39, 192, 90);
+        transform: translateY(-10px) translateX(-3px) ;
+    }
+
+    /* about  keneme*/
+    .about{
+       margin-top: -140px;
+        height: 100vh;
+        align-items: center;
+      padding-top: 150px;
+     padding-bottom: 700px;
+    }
+    .bt{
+        margin-left: 860px;
+        font-size: 40px;
+        font-weight: 600;
+        color:  rgb(152, 109, 66);
+       padding-top: -20px;
+    }
+
+    .aboutt { 
+        font-size: 30px;
+        margin-left: 470px;
+        width: 950px;
+        color:  rgb(152, 109, 66);
+       background-color:rgb(237, 234, 228);
+       border-radius: 10px;
+        transition: 3s;
+        
+    }
+    .aboutt:hover{
+       transform:translateY(80px) ;
+        color: rgb(21, 20, 20);
+    }
+  
+   /* box na may mga graph */
+   .bar-graph {
+    margin-top: 130px;
+    width: 600px;
+    height: 500px;
+    margin-left: 1000px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background-color: rgb(237, 234, 228);
+    transition: 2s;
+    border-radius: 10px;
+    }
+    .bar-graph:hover{
+        transform:translateX(100px);
+    }
+
+    .barski{
+        color: rgb(152, 109, 66);
+        font-size: 40px;
+        font-weight: 900;
+        margin-left: 210px;
+       margin-bottom: 70px;
+       padding-top: 20px;
+       transition: 2s;
+      
+    }
+    .barski:hover{
+        transform: translateY(30px) ;
+    }
+    .bar b {
+     color:rgb(255, 224, 171);
+     
+    }
+    .bar {
+    background-color:rgb(152, 109, 66);
+    height: 20px;
+    margin-bottom: 18px;
+    transition: width 0.5s ease;
+    font-size: 15px;
+   
+    }
+    .bar:hover{
+    color: rgb(103, 80, 10);
+        transition: 1s;
+        transform: translateY(-5px) translateX(-10px);
+    }
+    .bar-label {
+        font-size: 25px;
+        margin-bottom: 5px;
+        color: rgb(152, 109, 66);
+   
+    }
+     /* Schedule sa ABOUT */
+     .Schedule{
+        justify-items: center;
+        width: 735px;
+        height: auto; 
+        border-collapse: collapse;
+        justify-content: end;
+        background-color: rgb(237, 234, 228);
+        margin-left: 230px;
+        margin-top: -500px;
+        transition: 2s;
+        border-radius: 10px;
+        }
+    .Schedule:hover{
+        transform: translateX(-100px);
+        
+    }
+    .Ctitle{
+        
+        color: rgb(152, 109, 66);
+        font-size: 40px;
+        font-weight: 900;
+        margin-left: 210px;
+       margin-bottom: 30px;
+       padding-top: 20px;
+       transition: 1s;
+    }
+    .Ctitle:hover{
+        transform: translateY(20px) ;
+    }
+    .day{
+        color: rgb(152, 109, 66);
+        
+    }
+    .time{
+        color: rgb(103, 101, 99);
+    }
+    .css105{
+        background-color:  rgb(197, 132, 125);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .his{
+        background-color:  rgb(142, 209, 156);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .ccs103{
+        background-color:  rgb(228, 157, 218);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .hmn{
+        background-color: rgb(255, 117, 24);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .nstp{
+        background-color:  rgb(67, 199, 115);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .ccs114{
+        background-color:  rgb(109, 152, 230);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .com101{
+        background-color:  rgb(71, 240, 175);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    } 
+    .pe{
+        background-color:   rgb(224, 158, 93);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    .phd{
+        background-color:   rgb(183, 105, 225);
+        color: rgb(103, 101, 99);
+        text-align: center;
+    }
+    /* vision  */
+    .vision{
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 700px;
+        height: 500px;
+        background-color: rgb(46, 141, 66);
+        margin-left: 270px;
+        padding-top: 30px;
+        margin-top: 100px;
+        transition: 2s;
+      
+    }
+    .vision:hover{
+        transform: translateY(-50px) ;
+    }
+    .vtxt{
+        justify-content: center;
+       padding-top: 30px;
+        font-size: 45px;
+        color: rgb(236, 231, 218);
+    }
+    .vtitle{
+        color: rgb(236, 231, 218);
+        text-align: center;
+        font-size: 65px;
+    }
+    /* mission */
+    .mission{
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 700px;
+        height: 500px;
+        background-color: rgb(219, 74, 91);
+        margin-left: 980px;
+        padding-top: 30px;
+        margin-top: -500px;
+        transition: 2s;
+    }
+    .mission:hover{
+        transform: translateY(-50px) ;
+    }
+    .mtxt1{
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 42px;
+        color: rgb(236, 231, 218);
+    }
+    .mtitle1{
+        color: rgb(236, 231, 218);
+        text-align: center;
+        font-size: 65px;
+    }
+
+
+    /*portfolio body*/
+    .portfolio{
+        display: flex;
+        height: 200vh;
+        align-items: center;
+        padding-bottom: 200px;
+
+    }
+    /*portfolio title */
+    .pt{
+        margin-left: 859px;
+        font-size: 40px;
+        font-weight: 600;
+        color:  rgb(152, 109, 66);
+        margin-top: -1770px;
+    }
+    /* title */
+    .pre{
+     font-size: 30px;
+     color: rgb(152, 109, 66);
+       margin-left: 70px;
+        margin-bottom: -166px;
+    }
+    .pr{
+        color: rgb(152, 109, 66);
+      
+        font-size: 30px;
+        margin-bottom: -870px;
+       padding-left: 67px;
+       width: 170px;
+        
+    }
+
+    /* portfolio pictures */
+    
+    .act{
+       /* 1st image */
+       margin-left: -1328px;
+        padding-left: 20px;
+        margin-top: -1272px;
+    }
+    .txt{
+        color:  rgb(152, 109, 66);
+        font-size: 30px;
+        margin-left: 430px;
+        margin-bottom: 60px;
+        font-weight: 100px;
+    }
+    .image{ 
+        width: 450px;
+        height: auto;
+        margin-top: -100px;
+        margin-left: 300px;
+        display: flex;
+        transition: 1s;
+    }
+    .image:hover{
+        transform: translateY(40px) ; 
+    } 
+     /* 2nd image */
+    .act001{
+        padding-left: 30px;
+        margin-bottom: 270px;
+        margin-top: -998px;
+        
+   }
+   .txt001{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+     
+   }
+   .image001{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image001:hover{
+        transform: translateY(43px);
+    }
+
+    /* 3rd image */
+    .act002{
+        padding-left: 30px;
+        margin-bottom: 270px;
+        margin-top: -998px;
+   }
+   .txt002{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image002{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image002:hover{
+        transform: translateY(43px);
+    }
+    /* 4th image */
+    .act003{
+        padding-left: 30px;
+        margin-bottom: 270px;
+        margin-top: -998px;
+   }
+   .txt003{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image003{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image003:hover{
+        transform: translateY(43px);
+    }
+    /* 5th image */
+    .act004{
+        padding-left: 30px;
+        margin-bottom: -500px;
+        margin-left: -1907px;
+        margin-top: -998px;
+   }
+   .txt004{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image004{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image004:hover{
+        transform: translateY(43px);
+    }
+     /* 6th image */
+     .act005{
+        padding-left: 30px;
+        margin-bottom: -500px;
+        margin-top: -998px;
+   }
+   .txt005{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image005{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image005:hover{
+        transform: translateY(43px);
+    }
+    /* 7th image */
+    .act006{
+        padding-left: 30px;
+        margin-bottom: -500px;
+        margin-top: -998px;
+   }
+   .txt006{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image006{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image006:hover{
+        transform: translateY(43px);
+    }
+     /* 8th image */
+     .act007{
+        padding-left: 30px;
+        margin-bottom: -500px;
+        margin-top: -998px;
+   }
+   .txt007{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image007{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image007:hover{
+        transform: translateY(43px);
+    }
+    /* 9th image */
+    .act008{
+        padding-left: 30px;
+       margin-top: 300px;
+        margin-left: -1930px;
+        
+   }
+   .txt008{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image008{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image008:hover{
+        transform: translateY(43px);
+    }
+    /* 10th image */
+    .act009{
+        padding-left: 20px;
+        margin-top:  300px;
+      
+   }
+   .txt009{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image009{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image009:hover{
+        transform: translateY(43px);
+    }
+    /* 11th image */
+    .act010{
+        padding-left: 30px;
+        margin-top:  300px;
+      
+   }
+   .txt010{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image010{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image010:hover{
+        transform: translateY(43px);
+    }
+     /* 12th image */
+     .act011{
+        padding-left: 30px;
+        margin-top:  300px;
+   }
+   .txt011{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 150px;
+   }
+   .image011{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-top: -10px;
+        margin-left: -270px;
+    }
+    .image011:hover{
+        transform: translateY(43px);
+    }
+    /* 13th image */
+    .act012{
+        padding-left: 30px;
+       margin-top: 1100px;
+        margin-left: -1949px;
+   }
+   .txt012{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 78px;
+       margin-top: -10px;
+   }
+   .image012{
+         width: 250px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-left: -222px;
+    }
+    .image012:hover{
+        transform: translateY(43px);
+    }
+    /* 14th image */
+    .act013{
+        padding-left: 50px;
+      margin-top: 1100px;
+   }
+   .txt013{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 90px;
+       margin-top: -10px;
+   }
+   .image013{
+         width: 250px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-left: -222px;
+    }
+    .image013:hover{
+        transform: translateY(43px);
+    }
+     /* 15th image */
+     .act014{
+        padding-left: 50px;
+      margin-top: 970px;
+   }
+   .txt014{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 90px;
+       margin-top: -10px;
+   }
+   .image014{
+         width: 450px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-left: -222px;
+    }
+    .image014:hover{
+        transform: translateY(43px);
+    }
+     /* 16th image */
+     .act015{
+        padding-left: 30px;
+      margin-top: 1100px;
+      margin-left: -50px;
+   }
+   .txt015{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 90px;
+       margin-top: -10px;
+   }
+   .image015{
+         width: 250px;
+        height: auto;
+        display: flex;
+        transition: 1s;
+        margin-left: -222px;
+        margin-right: -40px;
+    }
+    .image015:hover{
+        transform: translateY(43px);
+    }
+    /* 17th image */
+    .act016{
+        padding-left: 57px;
+      margin-top: 1010px;
+     
+   }
+   .txt016{
+       color:  rgb(152, 109, 66);
+       font-size: 30px;
+       display: flex;
+       margin-left: 90px;
+       margin-top: -10px;
+   }
+   .image016{
+         width: 443px;
+        height: 350px;
+        display: flex;
+        transition: 1s;
+        margin-left: -222px;
+    }
+    .image016:hover{
+        transform: translateY(63px);
+    }
+      /* 18th image */
+    .act017{
+     
+       margin-left: -2578px;
+        padding-left: 20px;
+        margin-top: 2072px;
+    }
+    .txt017{
+        color:  rgb(152, 109, 66);
+        font-size: 30px;
+        margin-left: 700px;
+        margin-top: -120px;
+        font-weight: 100px;
+    }
+    .image017{ 
+        width: 450px;
+        height: auto;
+        margin-top: -30px;
+        display: flex;
+        transition: 2s;
+    }
+    .image017:hover{
+        transform: translateY(40px) ; 
+    } 
+
+      /* 19th image */
+      .act018{
+        padding-left: 30px;
+        margin-top: 2072px;
+    }
+    .txt018{
+        color:  rgb(152, 109, 66);
+        font-size: 30px;
+        margin-top: -120px;
+        font-weight: 100px;
+    }
+    .image018{ 
+        width: 450px;
+        height: auto;
+        margin-top: -30px;
+        display: flex;
+        transition: 2s;
+    }
+    .image018:hover{
+        transform: translateY(40px) ; 
+    } 
+    /* 20th image */
+    .act019{
+        padding-left: 30px;
+        margin-top: 2072px;
+    }
+    .txt019{
+        color:  rgb(152, 109, 66);
+        font-size: 30px;
+        margin-top: -120px;
+        font-weight: 100px;
+    }
+    .image019{ 
+        width: 450px;
+        height: auto;
+        margin-top: -30px;
+        display: flex;
+        transition: 2s;
+    }
+    .image019:hover{
+        transform: translateY(40px) ; 
+    } 
+
+
+
+
+
+    /* contact */
+
+ .contact{
+    display: flex;
+        height: 50vh;
+        align-items: center;
+     
+     
+    }
+    
+    .button2{
+    bottom: 50px;
+    width: 200px;
+    justify-content: space-around;
+    
+   }
+   .button2 a {
+    width: 40px;
+    height: 40px;
+    border: 50px solid lightpink;
+    border-radius: 50%;
+    font-size: 10px;
+    text-decoration: none;
+    color:  rgb(152, 109, 66);
+   }
+
+
+
+
+
+
+
+
+
+
+    /*pinakang baba footer*/
+   .footer{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            width: auto;
+            padding: 40px ;
+            background-color: rgb(152, 109, 66);
+            display: flex;
+            justify-content: space-around;
+   }
+
+</style>
+
+<body>
+    <header class="header">
+        <a href="#Bajade" class="logo">Bajade</a>
+        <nav class="navbar">
+             <a href="#Home" >Home </a> 
+             <a href="#About"  >About</a>
+             <a href="#Portfolio" >Portfolio</a>
+             <a href="#Contact" >Contact</a>
+             
+             
+        </nav>
+       <a href="#" class="moon"> <i class='bx bx-moon'></i> </a>
+        <!-- 2nd moon icon <i class='bx bxs-moon' ></i> -->
+    </header>
+   
+    <!--1st about home-->
+    
+    <section id="Home" class = "homee">
+        <div class= "homeebackground">
+            <h1><b>
+                 Hello! I'm Bajade
+                </b>
+             </h1>   
+          
+            <h3>ASPIRING CS PROFESSIONAL </h3>
+            <p>   
+               Welcome! I am, first-year BS Computer Science
+                student of University of Cabuyao. <br> 
+                Future Frontend Developer, Web Developer, and Game Developer.
+                 <br>
+            </p>
+            <a href="#"> Download CV</a>
+        </div>
+       
+     <div> <img src="picture.png" class = "img" > </div> 
+       
+    </section>
+    
+    <!-- first about me-->
+<section  id="About" class = "about" >
+    <div class="bt">About</div>
+    <div class="aboutt">
+        <p> I'm Riocel C. Bajade, I live in Santa Rosa City, Laguna and I graduated 
+         from Elementary School Batch 2017 at
+        Dita Elementary School.  In year 2021 I graduated  from Kalayaan 
+         fational High School, When im in senior high school <br> batch 2023,  
+          I graduated from Metropolitan Institute of Arts and Science.</p> 
+
+        
+    </div>
+       
+        <div class="bar-graph">
+            <div class="barski">Skills</div>
+            <div class="bar-label">HTML</div>
+            <div class="bar" style="width: 50%;"> <b>50% </b></div>
+            <div class="bar-label">CSS</div>
+            <div class="bar" style="width: 60%;"><b>60% </b></div> 
+            <div class="bar-label">JAVA</div>
+            <div class="bar" style="width: 40%;"><b>40% </b></div>
+            <div class="bar-label">JAVASCRIPT</div>
+            <div class="bar" style="width: 20%;"><b>20% </b></div>
+         </div>
+         
+         <div class="Schedule">
+            <div class="Ctitle">My Class Schedule</div>
+            <table border="1px" >
+                <!-- 1st row -->
+            <tr class="day" >
+                <th>TIME </th>
+                <th>MONDAY </th>
+                <th>TUESDAY </th>
+                <th>WEDNESDAY </th>
+                <th>THURSDAY </th>
+                <th>FRIDAY </th>
+                <th>SATURDAY </th>
+                <th>SUNDAY </th>
+            </tr>
+              <!-- 2nd row -->
+            <tr>
+                <td class="time">7:00AM-7:30AM </td>
+                <td></td>
+                <td class="css105">CCS105</td>
+                <td class="his">HIS101</td>
+                <td class="ccs103">CCS103</td>
+                <td class="hmn">HMN101</td>
+                <td class="nstp">NSTP2</td>
+                <td ></td>
+            </tr>
+                 <!-- 3rd row -->
+            <tr>
+                <td class="time">7:30AM-8:00AM </td>
+                <td></td>
+                <td class="css105"></td>
+                <td class="his"></td>
+                <td class="ccs103"></td>
+                <td class="hmn"></td>
+                <td class="nstp"></td>
+                <td></td>
+               
+            </tr>
+                 <!-- 4th row -->
+            <tr>
+                <td class="time">8:00AM-8:30AM</td>
+                <td></td>
+                <td class="css105"></td>
+                <td class="his"></td>
+                <td class="ccs103"></td>
+                <td class="hmn"></td>
+                <td class="nstp"></td>
+                <td></td>
+               
+            </tr>
+                <!-- 5th row -->
+            <tr>
+                <td class="time">8:30AM-9:00AM</td>
+                <td></td>
+                <td class="css105"></td>
+                <td class="his"></td>
+                <td class="ccs103"></td>
+                <td class="hmn"></td>
+                <td class="nstp"></td>
+                <td></td>
+               
+            </tr>
+            <!-- 6th row -->
+            <tr>
+                <td class="time">9:00AM-9:30AM</td>
+                <td></td>
+                <td class="css105"></td>
+                <td class="his"></td>
+                <td></td>
+                <td class="hmn"></td>
+                <td class="nstp"></td>
+                <td></td>
+               
+            </tr>
+                <!-- 7th row -->
+            <tr>
+                <td class="time">9:30AM-10:00AM</td>
+                <td></td>
+                <td class="css105"></td>
+                <td class="his"></td>
+                <td></td>
+                <td class="hmn"></td>
+                <td class="nstp"></td>
+                <td></td>
+               
+            </tr>
+            <!-- 8th row -->
+            <tr>
+                <td class="time">10:00AM-10:30AM</td>
+                <td class="ccs114">CCS114</td>
+                <td class="com101">COM101</td>
+                <td></td>
+                <td></td>
+                <td class="com101">COM101</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 9th row -->
+            <tr>
+                <td class="time">10:30AM-11:00AM</td>
+                <td class="ccs114" ></td>
+                <td class="com101"></td>
+                <td></td>
+                <td></td>
+                <td class="com101"></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 10th row -->
+            <tr>
+                <td class="time">11:00AM-11:30AM</td>
+                <td class="ccs114"></td>
+                <td class="com101"></td>
+                <td></td>
+                <td></td>
+                <td class="com101"> </td>
+                <td></td>
+                <td></td>
+            </tr>   
+            <!-- 11th row -->
+            <tr>
+                <td class="time">11:30AM-12:00AM</td>
+                <td class="ccs114"></td>
+                <td></td>
+                <td></td>
+                <td class="css105">CCS105</td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 12th row -->
+            <tr>
+                <td class="time">12:00AM-12:30AM</td>
+                <td class="ccs114"></td>
+                <td></td>
+                <td></td>
+                <td class="css105"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 13th row -->
+            <tr>
+                <td class="time">12:30AM-1:00AM</td>
+                <td class="ccs114"></td>
+                <td></td>
+                <td></td>
+                <td class="css105"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 14th row -->
+            <tr>
+                <td class="time">1:00AM-1:30AM</td>
+                <td class="ccs103">CSS103</td>
+                <td ></td>
+                <td></td>
+                <td class="ccs114">CCS114</td>
+                <td> </td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 15th row -->
+            <tr>
+                <td class="time">1:30AM-2:00AM</td>
+                <td class="ccs103"></td>
+                <td></td>
+                <td></td>
+                <td class="ccs114"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 16th row -->
+            <tr>
+                <td class="time">2:00AM-2:30AM</td>
+                <td class="ccs103"></td>
+                <td></td>
+                <td></td>
+                <td class="ccs114"></td>
+                <td class="pe">PED102</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 17th row -->
+            <tr>
+                <td class="time">2:30AM-3:00AM</td>
+                <td class="ccs103"></td>
+                <td></td>
+                <td></td>
+                <td class="ccs114"></td>
+                <td class="pe"></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 18th row -->
+            <tr>
+                <td class="time">3:30AM-4:00AM</td>
+                <td class="ccs103"></td>
+                <td></td>
+                <td ></td>
+                <td></td>
+                <td class="pe"></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <!-- 19th row -->
+            <tr>
+                <td class="time">4:00AM-4:30AM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="phd">PHD102</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <td class="time">4:30AM-5:00AM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td  class="phd"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="vision">
+        <div class="vtitle">VISION</div>
+        <div class="vtxt">
+            <p>A premier institution of higher 
+             learning  in region IV, developing 
+            globally-competitive and value-laden 
+            professional and leaders instrumental
+            to community development and nation building
+            </p>
+            </div>
+         </div>
+
+         
+             <div class="mission">
+                <div class="mtitle1">MISSION</div>
+                <div class="mtxt1">
+                    <p>As an institution of higher learning,
+                        PnC  is commited to equip individuals
+                        with knowledge, skills, and values that
+                        will enable them to achieve their professional
+                         goals & provide leadership and service for national
+                         development. 
+                    </p>
+                    </div>
+            
+            
+            </div>
+       
+
+
+
+</section>
+                <!--portfolio title  -->
+    <!-- <div class="pr"><b>Midterms</b></div>
+    <div class="pre"><b> Prelims</b></div> -->
+           <!--third about  portfolio-->
+        <section id="Portfolio" class="portfolio">
+            
+            <div class="pt">Portfolio</div>
+           
+            <div class="act"><!-- 1st -->
+                <div class="txt"><b> Activity#1</b></div>
+                <img src="pic001.png" class="image"> 
+            </div>
+
+            <div class="act001"> <!-- 2nd-->
+                <div class="txt001"><b>Activity#2</b>
+                <img src="pic002.png" class="image001"> </div>
+            </div>
+            <div class="act002"> <!-- 3rd -->
+                <div class="txt002"><b> Activity#</b>
+                <img src="pic003.png" class="image002"> </div>
+            </div>
+            <div class="act003"> <!-- 4th -->
+                <div class="txt003"><b>  Activity#</b>
+                <img src="pic004.png" class="image003"> </div>
+            </div>
+            <div class="act004"> <!-- 5th -->
+                <div class="txt004"><b>Activity#</b>
+                <img src="pic005.png" class="image004"> </div>
+            </div>
+            <div class="act005"> <!-- 6th -->
+                <div class="txt005"><b>Activity#</b>
+                <img src="pic006.png" class="image005"> </div>
+            </div>
+            <div class="act006"> <!-- 7th -->
+                <div class="txt006"><b> Activity#</b>
+                <img src="pic007.png" class="image006"> </div>
+            </div>
+            <div class="act007"> <!-- 8th -->
+                <div class="txt007"><b> Activity#</b>
+                <img src="pic008.png" class="image007"> </div>
+            </div>
+            <div class="act008"> <!-- 9th -->
+                <div class="txt008"><b>LabExam</b>
+                <img src="pic009.png" class="image008"> </div>
+            </div>
+            <div class="act009"> <!-- 10th -->
+                <div class="txt009"><b>LabExam</b>
+                <img src="pic010.png" class="image009"> </div>
+            </div>
+            <div class="act010"> <!-- 11th -->
+                <div class="txt010"><b>Acttivity#</b>
+                <img src="pic011.png" class="image010"> </div>
+            </div>
+            <div class="act011"> <!-- 12th -->
+                <div class="txt011"><b>Activity#</b>
+                <img src="pic012.png" class="image011"> </div>
+            </div>
+            <div class="act012"> <!-- 13th -->
+                <div class="txt012"><b>Prelims Exam</b>
+                <img src="pic013.png" class="image012"> </div>
+            </div>
+            <div class="act013"> <!-- 14th -->
+                <div class="txt013"><b>Long Quiz</b>
+                <img src="pic014.png" class="image013"> </div>
+            </div>
+                     <!-- nabaliktad -->
+            <div class="act015"> <!-- 16th -->
+                <div class="txt015"><b>Midterms Exam</b>
+                <img src="pic016.png" class="image015"> </div>
+            </div>
+            <div class="act014"> <!-- 15th -->
+                <div class="txt014"><b>Finals Quiz#1</b>             
+                <img src="pic015.png" class="image014"> </div>
+            </div>
+            <div class="act016"> <!-- 17th -->
+                <div class="txt016"><b>LabAct#3</b>             
+                <img src="pic017.png" class="image016"> </div>
+            </div>
+            <div class="act017"> <!-- 18th -->
+                <div class="txt017"><b>LabAct#3 Source Code</b>             
+                <img src="pic018.png" class="image017"> </div>
+            </div>
+            <div class="act018"> <!-- 19th -->
+                <div class="txt018"><b>LabAct#1 </b>             
+                <img src="pic019.png" class="image018"> </div>
+            </div>
+            <div class="act019"> <!-- 20th -->
+                <div class="txt019"><b>LabAct#1 Source Code</b>             
+                <img src="pic020.png" class="image019"> </div>
+            </div>
+            
+          
+
+        </section>
+
+         <!-- second about contact-->
+    <section id="Contact" class="contact">
+      
+
+
+    </section>
+
+    <footer class="footer">
+        <div>
+            <a href="#" class="button2">
+                <a href="https://www.facebook.com/BajadeCastroo"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></i></a>
+            </a>
+         </div>
+    </footer>
+ </body>
+</html>
